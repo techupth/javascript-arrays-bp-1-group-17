@@ -44,7 +44,10 @@ let orders = [
 ];
 
 // Start coding here
-let isArray;
-let creditCardTypeOfBlindermann;
-let totalPurchaseOfJoannet;
-let totalPurchaseOfDary;
+let isArray = Array.isArray(orders);
+let creditCardTypeOfBlindermann = orders[2]["creditCardType"];
+creditCardTypeOfBlindermann = "visa"
+let totalPurchaseOfJoannet = orders[3]["productQuantity"];
+let totalPurchaseOfDary = orders[1]["productQuantity"] *  orders[1]["productPrice"];
+delete orders[0];
+console.log(creditCardTypeOfBlindermann)
