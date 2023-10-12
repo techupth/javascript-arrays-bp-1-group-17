@@ -12,7 +12,21 @@ const employees = [
   },
 ];
 // Start coding here
-let alex;
-let alexHobbies;
-let alexAndJamesAge;
+let alex = employees[1]["name"];
+let alexHobbies= "Watching basketball";
+employees[1]["hobbies"].push(alexHobbies) ; 
+let alexAndJamesAge= employees[0]["age"] + employees[1]["age"];
 const updateEmployees = employees;
+updateEmployees[2] = {
+  name: "Alicia" ,
+  age: 29 , 
+  hobbies: ["Shopping","Reading novels"]
+};
+updateEmployees[3] = {
+  name: "Kody" ,
+  age: 19 , 
+  hobbies: ["Computer games","Wakeboard"]
+};
+console.log(updateEmployees);
+delete updateEmployees[3];
+console.log(updateEmployees);
